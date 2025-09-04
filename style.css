@@ -1,0 +1,69 @@
+/* ===== Simple Calculator CSS ===== */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f4f4;
+  margin: 0;
+}
+
+.calculator {
+  background: #222;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#result {
+  width: 100%;
+  height: 60px;
+  text-align: right;
+  font-size: 22px;
+  margin-bottom: 12px;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  background: #111;
+  color: #fff;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 70px);
+  gap: 10px;
+  justify-content: center;
+}
+
+button {
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #444;
+  color: white;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #666;
+}
+
+.equal {
+  grid-column: span 2;
+  background: #19c37d;
+}
+
+.equal:hover {
+  background: #16a067;
+}
+
+.clear {
+  background: #d9534f;
+}
+
+.clear:hover {
+  background: #b52b27;
+}
